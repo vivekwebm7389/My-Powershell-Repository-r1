@@ -3,7 +3,7 @@
 ### How to rename all same type of files sequentially in the folder ?
  - By using iterator in Powershell with name matching and Rename-Item command:
 ```ps1
-$i = 0; Get-ChildItem *.mp4 | %{Rename-Item $_ -NewName ('Twisters_clip_{0:D4}.mp4' -f $i++)}
+$i = 0; Get-ChildItem *.mp4 | %{Rename-Item $_ -NewName ('<Movie/Series Name>_clip_{0:D4}.mp4' -f $i++)}
 ```
 
     Directory: E:\Documents\GitHub\My-Powershell-Repository\WindowsPowerShell
